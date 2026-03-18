@@ -116,7 +116,7 @@ class Menu_sales :public  Menu_Item
         }
     } 
 
-    int Most_popular_menu(int * Menu)
+    int  Most_popular_item(int* Menu )
     {
         switch (*Menu)
         {
@@ -297,7 +297,7 @@ class Menu
              total = m1->pricecalculater(quantity);
                 
              m1->Most_popular_cuisine(&cyprus, &greece, &Menu);
-             m1->Most_popular_menu(& Menu);
+             m1->Most_popular_menu(& Menu ); // I didn't solve this problem
                cout << "Total price: " << total << endl;
             break;
         case 2:
@@ -314,7 +314,6 @@ class Menu
              cin >> quantity;
              total = m3->pricecalculater(quantity);
                    m3->Most_popular_cuisine(&cyprus, &greece, &Menu);
-
              break;
         
         case 4:
